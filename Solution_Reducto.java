@@ -1,12 +1,15 @@
 package SolutionsHackerRank;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-public class Solution {
+public class Solution_Reducto {
 
     private static int minWordLength;
 
     public static void main(String args[] ) throws Exception {
+
 
         Scanner scanner = new Scanner(System.in);
 
