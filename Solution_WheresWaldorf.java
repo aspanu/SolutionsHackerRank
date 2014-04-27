@@ -1,8 +1,9 @@
 package SolutionsHackerRank;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Solution {
+public class Solution_WheresWaldorf {
 
     public static void main(String args[] ) throws Exception {
 
