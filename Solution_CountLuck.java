@@ -1,7 +1,7 @@
 package SolutionsHackerRank;
 
 /**
- * Solution for CountLuck problem from 101 Hack February on www.hackerrank.com
+ * Solution_PuzzleFinder for CountLuck problem from 101 Hack February on www.hackerrank.com
  * Adrian Spanu
  * 2014-04-01
  */
@@ -159,4 +159,4 @@ public class Solution_CountLuck {
         return true;
     }
 
-} //Solution
+} //Solution_PuzzleFinder

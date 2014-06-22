@@ -1,7 +1,7 @@
 package SolutionsHackerRank;
 
 /**
- * Solution for Sherlock problem from 101 Hack February on www.hackerrank.com
+ * Solution_PuzzleFinder for Sherlock problem from 101 Hack February on www.hackerrank.com
  * Adrian Spanu
  * 2014-04-01
  */
@@ -34,4 +34,4 @@ public class Solution_Sherlock {
         } //for
 
     } //main
-} //Solution
+} //Solution_PuzzleFinder

@@ -27,4 +27,4 @@ public class Solution_InfiniteRectangle {
         System.out.println(((long) minX) * minY);
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder

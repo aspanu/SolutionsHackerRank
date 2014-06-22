@@ -1,7 +1,7 @@
 package SolutionsHackerRank;
 
 /**
- * Solution for ColoringTree problem from 101 Hack February on www.hackerrank.com
+ * Solution_PuzzleFinder for ColoringTree problem from 101 Hack February on www.hackerrank.com
  * Adrian Spânu
  * 2014-04-01
  */
@@ -14,9 +14,9 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-Solution by Alex Chow. My solution is below.
+Solution_PuzzleFinder by Alex Chow. My solution is below.
 
-public class Solution {
+public class Solution_PuzzleFinder {
 
     static class Node {
         Set<Node> children = new LinkedHashSet<Node>();
@@ -142,7 +142,7 @@ public class Solution_ColouringTree {
 
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder
 
 /*
 class Node {

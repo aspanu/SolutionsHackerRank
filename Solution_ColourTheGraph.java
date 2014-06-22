@@ -36,4 +36,4 @@ public class Solution_ColourTheGraph {
         System.out.println(treeDepth);
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder

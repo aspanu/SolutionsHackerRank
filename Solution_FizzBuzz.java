@@ -29,4 +29,4 @@ public class Solution_FizzBuzz {
 
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder

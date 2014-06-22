@@ -29,4 +29,4 @@ public class Solution_NumberOfDifferences {
 
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder

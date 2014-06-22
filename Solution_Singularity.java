@@ -101,4 +101,4 @@ public class Solution_Singularity {
         } //for
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder

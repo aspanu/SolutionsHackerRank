@@ -51,4 +51,4 @@ public class Solution_Reducto {
             } //if
         } //for
     } //removeWords
-} //Solution
+} //Solution_PuzzleFinder

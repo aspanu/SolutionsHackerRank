@@ -34,4 +34,4 @@ public class Solution_PerfectPartner {
         } //for
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder

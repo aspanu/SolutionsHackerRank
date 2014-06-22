@@ -1,9 +1,8 @@
 package SolutionsHackerRank;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
-public class Solution_WheresWaldorf {
+public class Solution_PuzzleFinder {
 
     public static void main(String args[] ) throws Exception {
 

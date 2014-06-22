@@ -1,7 +1,7 @@
 package SolutionsHackerRank;
 
 /**
- * Solution for Sticks problem from 101 Hack February on www.hackerrank.com
+ * Solution_PuzzleFinder for Sticks problem from 101 Hack February on www.hackerrank.com
  * Adrian Spanu
  * 2014-04-01
  */

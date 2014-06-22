@@ -32,4 +32,4 @@ public class Solution_HexagonalGrid {
 
     } //main
 
-} //Solution
+} //Solution_PuzzleFinder
