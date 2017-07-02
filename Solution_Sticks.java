@@ -30,7 +30,7 @@ public class Solution_Sticks {
             emptyList = subtractAndRemoveSticks(sticks);
         } //while
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
     private static boolean subtractAndRemoveSticks(List<Integer> sticks) {
         //Take the list, find the minimum, subtract the minimum from each element, remove all elements that are zero

@@ -15,8 +15,8 @@ public class Solution_HexagonalGrid {
             String line1 = scanner.nextLine();
             String line2 = scanner.nextLine();
             int count = 0;
-            System.out.println("Line 1 = " + line1);
-            System.out.println("Line 2 = " + line2);
+            System.out.println("lineFinder.Line 1 = " + line1);
+            System.out.println("lineFinder.Line 2 = " + line2);
             for (int j = 0; j < size; j++) {
                 if (Integer.parseInt(String.valueOf(line1.charAt(j))) == 0)
                     count++;
@@ -30,6 +30,6 @@ public class Solution_HexagonalGrid {
                 System.out.println("NO");
         } //for
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder

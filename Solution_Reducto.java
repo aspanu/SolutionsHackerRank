@@ -29,7 +29,7 @@ public class Solution_Reducto {
             removeWords(originalWord, minWordToRemoveLength, wordsToRemove);
             System.out.println(minWordLength);
         } //for
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
     private static void removeWords(String word, int minWordToRemoveLength, List<String> wordsToRemove) {
         if (word.length() < minWordToRemoveLength) {

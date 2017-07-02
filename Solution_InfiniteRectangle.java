@@ -25,6 +25,6 @@ public class Solution_InfiniteRectangle {
         } //for
 
         System.out.println(((long) minX) * minY);
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder

@@ -58,7 +58,7 @@ public class Solution_CountLuck {
 
         } //for numTests
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
     private static String pathToString(String[] path) {
         StringBuilder stringBuilder = new StringBuilder();

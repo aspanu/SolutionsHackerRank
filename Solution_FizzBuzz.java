@@ -27,6 +27,6 @@ public class Solution_FizzBuzz {
                 System.out.println(i);
         } //for
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder

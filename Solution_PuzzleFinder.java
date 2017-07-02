@@ -29,7 +29,7 @@ public class Solution_PuzzleFinder {
             } //for
 
         } //for
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
     private static String findWordInPuzzle(ArrayList<String> puzzle, String word) {
         StringBuilder stringBuilder = new StringBuilder();

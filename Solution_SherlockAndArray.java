@@ -50,5 +50,5 @@ public class Solution_SherlockAndArray {
                 System.out.println("NO");
         } //for
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 }

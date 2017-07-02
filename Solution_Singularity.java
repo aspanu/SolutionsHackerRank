@@ -99,6 +99,6 @@ public class Solution_Singularity {
             else
                 System.out.println("INCORRECT QUERY TYPE.");
         } //for
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder

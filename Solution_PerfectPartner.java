@@ -32,6 +32,6 @@ public class Solution_PerfectPartner {
             } //for
             System.out.println(differences);
         } //for
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder

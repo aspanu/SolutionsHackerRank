@@ -27,6 +27,6 @@ public class Solution_NumberOfDifferences {
 
         System.out.println(numPairs);
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder

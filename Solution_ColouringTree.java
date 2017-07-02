@@ -36,7 +36,7 @@ public class Solution_PuzzleFinder {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void knightFinder.lineFinder.longestBalancedSubstring.main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder stringBuilder = new StringBuilder();
         String line = bufferedReader.readLine();
@@ -109,7 +109,7 @@ import java.util.*;
 
 public class Solution_ColouringTree {
 
-    public static void main(String[] args) {
+    public static void knightFinder.lineFinder.longestBalancedSubstring.main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int numNodes = scanner.nextInt();
@@ -140,7 +140,7 @@ public class Solution_ColouringTree {
             System.out.println(tree.get(nextQuery - 1).getSubtreeUniqueColours().size());
         } //for
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder
 

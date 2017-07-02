@@ -34,6 +34,6 @@ public class Solution_ColourTheGraph {
                 treeDepth = tree.get(nodeTo-1).depth;
         } //for
         System.out.println(treeDepth);
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
 } //Solution_PuzzleFinder

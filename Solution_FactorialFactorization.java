@@ -16,7 +16,7 @@ public class Solution_FactorialFactorization {
             numFactors = numFactors * 2; //Since we are actually looking for N! ^ 2 not N!)
         System.out.println(numFactors);
 
-    } //main
+    } //knightFinder.lineFinder.longestBalancedSubstring.main
 
     private static int factorize(int toFactorize) {
 

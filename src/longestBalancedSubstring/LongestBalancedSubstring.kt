@@ -1,4 +1,4 @@
-
+package longestBalancedSubstring
 
 /**
  * Created by aspanu on 2017-06-20
@@ -10,10 +10,10 @@
 
 fun main(args: Array<String>) {
 
-//    println(pp(6, internetSolution("((()))")))
-//    println(pp(4, internetSolution("(())")))
-//    println(pp(2, internetSolution(")))())))")))
-//    println(pp(6, internetSolution("()()()")))
+//    println(longestBalancedSubstring.pp(6, longestBalancedSubstring.internetSolution("((()))")))
+//    println(longestBalancedSubstring.pp(4, longestBalancedSubstring.internetSolution("(())")))
+//    println(longestBalancedSubstring.pp(2, longestBalancedSubstring.internetSolution(")))())))")))
+//    println(longestBalancedSubstring.pp(6, longestBalancedSubstring.internetSolution("()()()")))
     println(pp(8, internetSolution("((())))))))()()()()")))
 
     println(pp(8, muaazSolution("((())))))))()()()()")))
@@ -25,6 +25,7 @@ fun muaazSolution(parenLine: String): Int {
     var longestLength = 0
     for (i in 0..parenLine.length) {
     }
+    return 0
 }
 
 fun pp(realAnswer: Int, givenAnswer: Int): String {
@@ -48,8 +49,6 @@ fun internetSolution(parenLine: String) : Int {
 
     return parens * 2
 }
-
-fun
 
 fun muaazRecursion(str: String, startIndex: Int): Int {
     var l = 0
