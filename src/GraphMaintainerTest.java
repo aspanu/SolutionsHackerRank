@@ -90,31 +90,39 @@ public class GraphMaintainerTest {
         gm.add(new AddInstruction(10L, 11L));
         gm.add(new AddInstruction(11L, 12L));
 
+        assertTrue(gm.isLinked(1L, 1L));
         assertTrue(gm.isLinked(1L, 2L));
         assertTrue(gm.isLinked(1L, 3L));
         assertTrue(gm.isLinked(1L, 4L));
         assertFalse(gm.isLinked(1L, 10L));
         assertFalse(gm.isLinked(1L, 11L));
         assertFalse(gm.isLinked(1L, 12L));
+
         assertTrue(gm.isLinked(2L, 1L));
+        assertTrue(gm.isLinked(2L, 2L));
         assertTrue(gm.isLinked(2L, 3L));
         assertTrue(gm.isLinked(2L, 4L));
         assertFalse(gm.isLinked(2L, 10L));
         assertFalse(gm.isLinked(2L, 11L));
         assertFalse(gm.isLinked(2L, 12L));
+
         assertTrue(gm.isLinked(3L, 1L));
         assertTrue(gm.isLinked(3L, 2L));
+        assertTrue(gm.isLinked(3L, 3L));
         assertTrue(gm.isLinked(3L, 4L));
         assertFalse(gm.isLinked(3L, 10L));
         assertFalse(gm.isLinked(3L, 11L));
         assertFalse(gm.isLinked(3L, 12L));
+
         assertTrue(gm.isLinked(4L, 1L));
         assertTrue(gm.isLinked(4L, 2L));
         assertTrue(gm.isLinked(4L, 3L));
+        assertTrue(gm.isLinked(4L, 4L));
         assertFalse(gm.isLinked(4L, 10L));
         assertFalse(gm.isLinked(4L, 11L));
         assertFalse(gm.isLinked(4L, 12L));
 
+        assertTrue(gm.isLinked(10L, 10L));
         assertTrue(gm.isLinked(10L, 11L));
         assertTrue(gm.isLinked(10L, 12L));
         assertFalse(gm.isLinked(10L, 1L));
@@ -123,6 +131,7 @@ public class GraphMaintainerTest {
         assertFalse(gm.isLinked(10L, 4L));
 
         assertTrue(gm.isLinked(11L, 10L));
+        assertTrue(gm.isLinked(11L, 11L));
         assertTrue(gm.isLinked(11L, 12L));
         assertFalse(gm.isLinked(11L, 1L));
         assertFalse(gm.isLinked(11L, 2L));
@@ -131,11 +140,11 @@ public class GraphMaintainerTest {
 
         assertTrue(gm.isLinked(12L, 10L));
         assertTrue(gm.isLinked(12L, 11L));
+        assertTrue(gm.isLinked(12L, 12L));
         assertFalse(gm.isLinked(12L, 1L));
         assertFalse(gm.isLinked(12L, 2L));
         assertFalse(gm.isLinked(12L, 3L));
         assertFalse(gm.isLinked(12L, 4L));
-
     }
 
 

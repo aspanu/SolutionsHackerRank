@@ -7,6 +7,10 @@ import java.util.regex.Pattern;
 /**
  * Here we concern ourselves with all of the issues of actually parsing input lines
  * The rest of the program is structured so that we can assume that only valid AddInstructions are acceptable
+ *
+ * The parser itself is very strict with the instructions. They must be precisely as given in the instructions,
+ * no changes of case are allowed, no additional spaces are allowed (including before or after the instruction on the
+ * same line.
  */
 
 public class Parser {
@@ -70,16 +74,20 @@ public class Parser {
     }
 
 
-    private interface ValidInstruction {
-        void processValidLine(GraphMaintainer graphMaintainer);
+    private static abstract class ValidInstruction {
+        protected AddInstruction ai;
+
+        public ValidInstruction(Long firstNumber, Long secondNumber) {
+            ai = new AddInstruction(firstNumber, secondNumber);
+        }
+
+        abstract void processValidLine(GraphMaintainer graphMaintainer);
     }
 
-    private static class ValidAddInstruction implements ValidInstruction {
-
-        private AddInstruction ai;
+    private static class ValidAddInstruction extends ValidInstruction {
 
         public ValidAddInstruction(Long firstNumber, Long secondNumber) {
-            ai = new AddInstruction(firstNumber, secondNumber);
+            super(firstNumber, secondNumber);
         }
 
         @Override
@@ -88,12 +96,10 @@ public class Parser {
         }
     }
 
-    private static class ValidRemoveInstruction implements ValidInstruction {
-
-        private AddInstruction ai;
+    private static class ValidRemoveInstruction extends ValidInstruction {
 
         public ValidRemoveInstruction(Long firstNumber, Long secondNumber) {
-            ai = new AddInstruction(firstNumber, secondNumber);
+            super(firstNumber, secondNumber);
         }
 
         @Override
@@ -102,19 +108,17 @@ public class Parser {
         }
     }
 
-    private static class ValidIsLinkedInstruction implements ValidInstruction {
-
-        private Long node1;
-        private Long node2;
+    // In this case, to reduce the amount of duplicate code, we have added the AddInstruction class as a
+    // convenience mechanism for storing the two numbers that we need to pass to the linked instruction.
+    private static class ValidIsLinkedInstruction extends ValidInstruction {
 
         public ValidIsLinkedInstruction(Long firstNumber, Long secondNumber) {
-            node1 = firstNumber;
-            node2 = secondNumber;
+            super(firstNumber, secondNumber);
         }
 
         @Override
         public void processValidLine(GraphMaintainer graphMaintainer) {
-            System.out.println(graphMaintainer.isLinked(node1, node2));
+            System.out.println(graphMaintainer.isLinked(ai.getLeft(), ai.getRight()));
         }
     }
 

@@ -36,7 +36,10 @@ public class GraphMaintainer {
     }
 
     /**
-     * Get the left and right subGraphs and add them to all of the nodes of the opposite sub-graph
+     * Get the left and right subGraphs, add all of the nodes of the other subgraph to the common set
+     * of the larger subgraph and then update the smaller subgraph to point to the common set
+     *
+     * This assumes that we are joining two distinct subgraphs each operation.
      */
     private void processAdd(AddInstruction instruction) {
         initializeNewNodes(instruction);
@@ -44,8 +47,16 @@ public class GraphMaintainer {
         Set<Long> leftSubGraph = graph.get(instruction.getLeft());
         Set<Long> rightSubGraph = graph.get(instruction.getRight());
 
-        addASubGraphToAllNodesOfASubGraph(leftSubGraph, rightSubGraph);
-        addASubGraphToAllNodesOfASubGraph(rightSubGraph, leftSubGraph);
+        if (rightSubGraph.contains(leftSubGraph.iterator().next())) {
+            // The two subgraphs should already be the same, no need to update anything
+            return;
+        }
+
+        if (leftSubGraph.size() < rightSubGraph.size()) {
+            addASubGraphToAllNodesOfASubGraph(leftSubGraph, instruction.getRight());
+        } else {
+            addASubGraphToAllNodesOfASubGraph(rightSubGraph, instruction.getLeft());
+        }
     }
 
     private void initializeNewNodes(AddInstruction instruction) {
@@ -57,10 +68,12 @@ public class GraphMaintainer {
         }
     }
 
-    private void addASubGraphToAllNodesOfASubGraph(Set<Long> nodes, Set<Long> subGraph) {
+    private void addASubGraphToAllNodesOfASubGraph(Set<Long> nodes, Long otherNode) {
+        graph.get(otherNode).addAll(nodes); // Updating the common set
+
+        // Update the nodes to point to the common set
         for (Long node : nodes) {
-            // We have already initialized the graph nodes, so we shouldn't need to initialize them again
-            graph.get(node).addAll(subGraph);
+            graph.put(node, graph.get(otherNode));
         }
     }
 
@@ -80,7 +93,7 @@ public class GraphMaintainer {
     }
 
     /**
-     * To avoid errors, we need to check if both of the nodes are in the graph
+     * To avoid errors, we check if both of the nodes are in the graph before we check if
      */
     public boolean isLinked(Long node1, Long node2) {
         if (graph.containsKey(node1) && graph.containsKey(node2)) {

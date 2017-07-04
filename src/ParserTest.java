@@ -43,4 +43,20 @@ public class ParserTest {
         assertFalse(gm.isLinked(1L, 4L));
     }
 
+    @Test
+    public void testLargeNumbers() {
+        GraphMaintainer gm = new GraphMaintainer();
+
+        Parser.processLine(gm, "add 9223372036854775806 9123372036854775807");
+        Parser.processLine(gm, "add 9223372036854775806 9123372036854775806");
+        Parser.processLine(gm, "add 9123372036854775806 8123372036854775807");
+        Parser.processLine(gm, "is linked 9223372036854775806 8123372036854775807");
+        assertTrue(gm.isLinked(9223372036854775806L, 8123372036854775807L));
+
+        Parser.processLine(gm, "remove 9123372036854775806 8123372036854775807");
+        Parser.processLine(gm, "is linked 1 4");
+        assertFalse(gm.isLinked(9223372036854775806L, 8123372036854775807L));
+    }
+
+
 }
