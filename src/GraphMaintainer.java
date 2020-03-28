@@ -15,10 +15,6 @@ import java.util.Set;
  * 'remove' operations are slow [O(n*l)]
  * 'isLinked' operations are fast [O(1)]
  *
- * This architecture also means that we have roughly O(n^2 + l) space complexity
- * The O(n^2) comes from the storage of the graph, where in the worst case, each node stores all nodes
- * The O(l) comes from the storage of the 'true' history - this is where every 'add' instruction which
- * hasn't been subsequently 'removed' is stored
  */
 public class GraphMaintainer {
 
