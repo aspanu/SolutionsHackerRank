@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="226748b6-bdb0-467d-8cf6-e7be91be87af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interviewPrep/JumpingClounds.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interviewPrep/RepeatedString.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interviewPrep/SockMatcher.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interviewPrep/ValleyCounting.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddInstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddInstructionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphMaintainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphMaintainerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestSolution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestSolution.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interviewPrep/AppliedChat.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interviewPrep/UnzipMatrix.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
