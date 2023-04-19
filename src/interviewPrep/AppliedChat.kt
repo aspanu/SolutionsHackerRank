@@ -23,7 +23,7 @@ fun conflictEncode(map: MutableMap<String, String>, encoded: String, word: Strin
 
 fun createConflictEncoding(encoded: String, word: String): String {
     // Take substring before number, add a character to it, take away 1 from number, and add last character
-
+    return ""
 }
 
 fun isSentinel(map: Map<String, String>, conflictedEncoding: String): Boolean {
