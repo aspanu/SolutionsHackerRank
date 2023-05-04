@@ -18,14 +18,27 @@ data class Node(var prev: Node?, var next: Node?, var value: Int)
 data class DoublyLinkedList(var head: Node?, var tail: Node?) {
     fun insertFirst(x: Int) {
         val newHead = Node(null, head, x)
-        head?.prev = newHead
-        head = newHead
+        if (head == null && tail == null) {
+            // empty list
+            head = newHead
+            tail = newHead
+        } else {
+            head?.prev = newHead
+            newHead.next = head
+            head = newHead
+        }
     }
 
     fun insertLast(x: Int) {
         val newTail = Node(tail, null, x)
-        tail?.next = newTail
-        tail = newTail
+        if (head == null && tail == null) {
+            head = newTail
+            tail = newTail
+        } else {
+            tail?.next = newTail
+            newTail.prev = tail
+            tail = newTail
+        }
     }
 
     fun deleteFirst() {
