@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="226748b6-bdb0-467d-8cf6-e7be91be87af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mit6006courseProblems/ProblemSet1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mit6006courseProblems/ProblemSet3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interviewPrep/AppliedChat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/interviewPrep/AppliedChat.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Solution/META-INF/Solution.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solution/META-INF/Solution.kotlin_module" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin.RepeatedStringKt">
+  <component name="RunManager" selected="Kotlin.ProblemSet3Kt">
     <configuration name="JumpingCloundsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="interviewPrep.JumpingCloundsKt" />
       <module name="Solution" />
@@ -57,15 +57,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepeatedStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interviewPrep.RepeatedStringKt" />
+    <configuration name="ProblemSet2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mit6006courseProblems.ProblemSet2Kt" />
       <module name="Solution" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SockMatcherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interviewPrep.SockMatcherKt" />
+    <configuration name="ProblemSet3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mit6006courseProblems.ProblemSet3Kt" />
+      <module name="Solution" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepeatedStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviewPrep.RepeatedStringKt" />
       <module name="Solution" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,10 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ProblemSet3Kt" />
+        <item itemvalue="Kotlin.ProblemSet2Kt" />
         <item itemvalue="Kotlin.RepeatedStringKt" />
         <item itemvalue="Kotlin.JumpingCloundsKt" />
         <item itemvalue="Kotlin.ValleyCountingKt" />
-        <item itemvalue="Kotlin.SockMatcherKt" />
       </list>
     </recent_temporary>
   </component>
